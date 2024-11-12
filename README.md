@@ -1,6 +1,24 @@
-![logo](.github/logo.png)
+<picture>
+    <source srcset="./.github/logo-dark.png" media="(prefers-color-scheme: light)">
+    <source srcset="./.github/logo-white.png" media="(prefers-color-scheme: dark)">
+    <img src="./.github/logo-dark.png" alt="logo">
+</picture>
+
+
+Useful tools for developer and people working in IT. [Have a look !](https://it-tools.tech).
+
+## Sponsors
+
+[![Fern banner](./.github/fern-banner.svg)](https://bit.ly/3zBl7DG)
+
+## Functionalities and roadmap
+
+Please check the [issues](https://github.com/CorentinTh/it-tools/issues) to see if some feature listed to be implemented.
+
+You have an idea of a tool? Submit a [feature request](https://github.com/CorentinTh/it-tools/issues/new/choose)!
 
 Useful tools for developer and people working in IT. [Have a look !].
+
 
 ## Self host
 
@@ -92,3 +110,4 @@ pnpm run script:create:tool my-tool-name
 ```
 
 It will create a directory in `src/tools` with the correct files, and a the import in `src/tools/index.ts`. You will just need to add the imported tool in the proper category and develop the tool.
+
