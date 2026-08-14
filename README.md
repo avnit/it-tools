@@ -108,3 +108,25 @@ pnpm run script:create:tool my-tool-name
 
 It will create a directory in `src/tools` with the correct files, and a the import in `src/tools/index.ts`. You will just need to add the imported tool in the proper category and develop the tool.
 
+<!-- ARCH-DIAGRAM:START -->
+
+## Architecture
+
+> Auto-generated architecture diagram. See [`docs/context-map.md`](docs/context-map.md) for the full context map (core application, containers/cloud, and database connections).
+
+```mermaid
+flowchart TD
+  User([User / Client])
+  UI["Frontend:80/5050<br/>Vue"]
+  App["it-tools<br/><small>index.ts</small><br/>Express / Node"]
+  DB0[("BigQuery (analytics)")]
+  Img["Container image<br/>(Docker)"]
+  Deploy["Vercel"]
+  User --> UI
+  UI --> App
+  App --> DB0
+  App -.deploy.-> Img
+  Img -.deploy.-> Deploy
+```
+
+<!-- ARCH-DIAGRAM:END -->
