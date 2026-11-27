@@ -48,12 +48,25 @@ tools:
     converter: Converter
     web: Web
     images and videos: 'Images & Videos'
+    agent: Agent
     development: Development
     network: Network
     math: Math
     measurement: Measurement
     text: Text
     data: Data
+
+  mcp-server-tester:
+    title: MCP server tester
+    description: Probe a Model Context Protocol server straight from your browser. Run the initialize handshake, list its tools, resources and prompts, and call a tool with your own JSON arguments to check what a Claude or Gemini agent would actually see.
+
+  llm-connector-tester:
+    title: LLM connector tester
+    description: Send a one-shot probe to Claude, Gemini, or any OpenAI-compatible endpoint to confirm a key, model id and base URL work end to end, with latency, token usage and the raw response body.
+
+  llm-recommender:
+    title: LLM recommender
+    description: Pick the right model for the work in front of you. Describe the workload, the context you need and your monthly volume, and get a ranked shortlist of Claude and Gemini models with the reasoning and an estimated bill.
 
   password-strength-analyser:
     title: Password strength analyser

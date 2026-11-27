@@ -1,3 +1,6 @@
+import { tool as mcpServerTester } from './mcp-server-tester';
+import { tool as llmConnectorTester } from './llm-connector-tester';
+import { tool as llmRecommender } from './llm-recommender';
 import { tool as base64FileConverter } from './base64-file-converter';
 import { tool as base64StringConverter } from './base64-string-converter';
 import { tool as basicAuthGenerator } from './basic-auth-generator';
@@ -142,6 +145,10 @@ export const toolsByCategory: ToolCategory[] = [
   {
     name: 'Images and videos',
     components: [qrCodeGenerator, wifiQrCodeGenerator, svgPlaceholderGenerator, cameraRecorder],
+  },
+  {
+    name: 'Agent',
+    components: [mcpServerTester, llmConnectorTester, llmRecommender],
   },
   {
     name: 'Development',
